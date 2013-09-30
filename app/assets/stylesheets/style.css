@@ -1,0 +1,52 @@
+body{
+ margin: 0 auto;
+ width: 800px;
+ margin-top: 100px;
+}
+
+p#blog{
+ font-size: 40px;
+ text-align: center;
+}
+
+ul.checkmark {
+ list-style-type: none;
+}
+
+li.ok { 
+ background:url("ok.png") no-repeat 0 50%;
+ padding-left: 40px;
+ padding-top: 10px;
+}
+li.ko { 
+ background:url("ko.png") no-repeat 0 50%;
+ padding-left: 40px;
+ padding-top: 10px;
+}
+
+
+
+.pretty  {
+ margin-top: 100px;
+ margin: 0 auto;
+ width: 100%;
+}
+
+
+.pretty th .current {
+  padding: 20px;
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.pretty th .asc { 
+  background-image: url(arrow-up.png);
+  	background-repeat:no-repeat;
+	background-position:right center;
+}
+
+.pretty th .desc { 
+  background-image: url(arrow-down.png);
+  	background-repeat:no-repeat;
+	background-position:right center;
+}

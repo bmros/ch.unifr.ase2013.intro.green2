@@ -1,0 +1,28 @@
+<h1>Listing Posts</h1>
+<hr />
+
+<table class="pretty">
+  <tr>
+    <th><%= sortable "title" %></th>
+    <th><%= sortable "text" %></th>
+    <th></th>
+  </tr>
+  
+<% #@posts.each do |post| %>
+<% for post in @posts %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.text %></td>
+    <td>
+	 <%= link_to 'Show |', post_path(post) %>
+	 <%= link_to 'Edit', edit_post_path(post) %>
+	 <%= link_to '| Destroy', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+	</td>
+  </tr>
+<% end %>
+</table>
+
+<hr />
+<%= link_to 'HOME', root_path %> | <%= link_to 'New post', new_post_path(post) %>
+
+
